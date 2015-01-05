@@ -37,7 +37,7 @@ defbarpadding 0 0
 #exec xsetroot -solid "#006060" -cursor_name left_ptr
 #bind semicolon colon
 set bgcolor black
-set fgcolor cyan
+set fgcolor green
 #set font  -xos4-terminus-*-*-*-*-16-*-*-*-*-*-iso8859-15
 #set bargravity sw
 #
