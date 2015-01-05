@@ -1,0 +1,110 @@
+#escape Super_L
+
+#newkmap MySuper
+#definekey MySuper h focusleft
+#definekey top s-h readkey MySuper
+
+#http://arpinux.org/x/doku.php/wms/ratpoison_gb
+#S : Shift modifier
+#C : Control modifier
+#M : Meta modifier
+#A : Alt modifier
+#H : Hyper modifier
+#s : Super modifier
+definekey top s-h focusleft
+definekey top s-j focusdown
+definekey top s-k focusup
+definekey top s-l focusright
+definekey top s-H exchangeleft
+definekey top s-J exchangedown
+definekey top s-K exchangeup
+definekey top s-L exchangeright
+definekey top s-n next
+definekey top s-p prev
+definekey top s-d exec dmenu_run
+
+bind d exec dmenu_run
+bind e exec emacsclient -c -a ""
+
+#alias term exec urxvt
+#escape F13
+#warp off
+#startup_message off
+#set winname class
+defborder 0
+set padding 0 0 0 0
+defbarpadding 0 0
+#exec xsetroot -solid "#006060" -cursor_name left_ptr
+#bind semicolon colon
+set bgcolor black
+set fgcolor cyan
+#set font  -xos4-terminus-*-*-*-*-16-*-*-*-*-*-iso8859-15
+#set bargravity sw
+#
+#alias showroot exec ratpoison -c fdump; ratpoison -c 'select -' -c only
+#
+#alias unshowroot exec ratpoison -c "frestore at $HOME/.rpfdump"
+#
+### Para mostrar el escritorio/To show your desktop
+#bind B showroot
+#
+#### Escritorios virtuales/Virtual desktops
+#exec rpws -1
+#exec /usr/bin/rpws init 6 -k
+#
+### bind = F13 = Caps Lock
+#bind F1 exec rpws 1
+#bind F2 exec rpws 2
+#bind F3 exec rpws 3
+#
+unbind k
+
+bind j focusdown
+
+bind h focusleft
+
+bind k focusup
+
+bind l focusright
+
+bind J exchangedown
+
+bind H exchangeleft
+
+bind K exchangeup
+
+bind L exchangeright
+
+bind C-k delete
+
+
+###Alt-tab
+#definekey top M-Tab next
+#definekey top M-ISO_Left_Tab prev
+#
+#### Atajos de teclas/Keybindings
+#bind e exec pcmanfm
+#bind i exec iceweasel
+#bind m exec sylpheed
+#bind u exec xchat
+#bind r restart
+#bind Pause exec sudo /sbin/shutdown -h now
+#bind w exec ~/bin/windows
+#bind space exec urxvt
+#bind o exec xlock -mode blank
+#bind a exec ratpoison -c "echo `date`"
+#bind q remove
+#bind p exec urxvt -e elinks
+#
+#
+#rudeness 12
+#
+## Para lanzar un Run box/To launch a Run box:
+#definekey top C-space exec
+#
+## Para hacer un screenshot/To make a screenshot:
+#definekey top Print exec urxvt -e scrot -cd 10
+#
+## Sound Volume/To increase or decrease the sound volume
+#bind Next exec amixer -q set PCM 5- unmute
+#bind Prior exec amixer -q set PCM 5+ unmute
