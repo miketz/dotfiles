@@ -4,6 +4,12 @@
 ;;   (setq stumpwm-shell-program "/usr/bin/stumpish"))
 ;;Then in stumpwm lisp files run: M-x stumpwm-mode
 
+
+
+
+(in-package :stumpwm)
+
+
 ;; useful prefixes at http://arpinux.org/x/doku.php/wms/ratpoison_gb
 ;; S : Shift modifier
 ;; C : Control modifier
@@ -15,10 +21,18 @@
 (define-key *top-map* (stumpwm:kbd "s-j") "move-focus down")
 (define-key *top-map* (stumpwm:kbd "s-k") "move-focus up")
 (define-key *top-map* (stumpwm:kbd "s-l") "move-focus right")
+(define-key *top-map* (stumpwm:kbd "s-H") "move-window left")
+(define-key *top-map* (stumpwm:kbd "s-J") "move-window down")
+(define-key *top-map* (stumpwm:kbd "s-K") "move-window up")
+(define-key *top-map* (stumpwm:kbd "s-L") "move-window right")
 (define-key *top-map* (stumpwm:kbd "s-n") "pull-hidden-next")
 (define-key *top-map* (stumpwm:kbd "s-p") "pull-hidden-previous")
 (define-key *top-map* (stumpwm:kbd "s-d") "exec")
 (define-key *top-map* (stumpwm:kbd "s-b") "banish")
+
+
+;; *root-map* is the C-t prefix.
+(define-key *root-map* (stumpwm:kbd "E") "exec emacsclient -c -a \"\"")
 
 
 ;; change focus to a frame when it is clicked.
