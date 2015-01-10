@@ -1,0 +1,22 @@
+
+;; useful prefixes at http://arpinux.org/x/doku.php/wms/ratpoison_gb
+;; S : Shift modifier
+;; C : Control modifier
+;; M : Meta modifier
+;; A : Alt modifier
+;; H : Hyper modifier
+;; s : Super modifier
+(define-key *top-map* (stumpwm:kbd "s-h") "move-focus left")
+(define-key *top-map* (stumpwm:kbd "s-j") "move-focus down")
+(define-key *top-map* (stumpwm:kbd "s-k") "move-focus up")
+(define-key *top-map* (stumpwm:kbd "s-l") "move-focus right")
+(define-key *top-map* (stumpwm:kbd "s-n") "pull-hidden-next")
+(define-key *top-map* (stumpwm:kbd "s-p") "pull-hidden-previous")
+(define-key *top-map* (stumpwm:kbd "s-d") "exec")
+(define-key *top-map* (stumpwm:kbd "s-b") "banish")
+
+
+
+;;change focus to a frame when it is clicked.
+(setf *mouse-focus-policy* :click) ;(:click :ignore :sloppy)
+
