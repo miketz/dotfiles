@@ -6,8 +6,7 @@
 
 
 
-
-(in-package :stumpwm)
+(in-package :stumpwm) ; i may type out the namespace anyway
 
 
 ;; useful prefixes at http://arpinux.org/x/doku.php/wms/ratpoison_gb
@@ -17,7 +16,7 @@
 ;; A : Alt modifier
 ;; H : Hyper modifier
 ;; s : Super modifier
-(define-key *top-map* (stumpwm:kbd "s-h") "move-focus left")
+(define-key *top-map* (kbd "s-h") "move-focus left")
 (define-key *top-map* (stumpwm:kbd "s-j") "move-focus down")
 (define-key *top-map* (stumpwm:kbd "s-k") "move-focus up")
 (define-key *top-map* (stumpwm:kbd "s-l") "move-focus right")
@@ -42,4 +41,5 @@
 ;; time format. Default was "%a %b %e %k:%M:%S"
 ;; uses same format string as: date --help
 ;; %n is newline.
-(setf stumpwm:*time-format-string-default* "%Y-%m-%d%n%a %b %e%n%r")
+(setf stumpwm:*time-format-string-default* "%Y-%m-%d%n%a %b %e%n%l:%M %p")
+                                        ;"%Y-%m-%d%n%a %b %e%n%r"
