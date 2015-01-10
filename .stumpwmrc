@@ -1,3 +1,8 @@
+;;put this in ~/.emacs.d/init.el
+;; (when (eq system-type 'gnu/linux)
+;;   (require 'stumpwm-mode)
+;;   (setq stumpwm-shell-program "/usr/bin/stumpish"))
+;;Then in stumpwm lisp files run: M-x stumpwm-mode
 
 ;; useful prefixes at http://arpinux.org/x/doku.php/wms/ratpoison_gb
 ;; S : Shift modifier
@@ -16,7 +21,11 @@
 (define-key *top-map* (stumpwm:kbd "s-b") "banish")
 
 
-
-;;change focus to a frame when it is clicked.
+;; change focus to a frame when it is clicked.
 (setf *mouse-focus-policy* :click) ;(:click :ignore :sloppy)
 
+
+;; time format. Default was "%a %b %e %k:%M:%S"
+;; uses same format string as: date --help
+;; %n is newline.
+(setf stumpwm:*time-format-string-default* "%Y-%m-%d%n%a %b %e%n%r")
