@@ -29,7 +29,10 @@ definekey top s-N nextscreen
 definekey top s-P prevscreen
 
 bind d exec dmenu_run
-bind e exec emacsclient -c -a ""
+bind e exec emacs
+bind C-e exec emacs
+#bind e exec emacsclient -c -a ""
+#bind C-e exec emacsclient -c -a ""
 
 #alias term exec urxvt
 #escape F13
