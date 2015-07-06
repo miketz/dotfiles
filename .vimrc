@@ -6,3 +6,4 @@ vnoremap fj <Esc>
 vnoremap jf <Esc>
 set ignorecase smartcase
 set hlsearch
+set incsearch
