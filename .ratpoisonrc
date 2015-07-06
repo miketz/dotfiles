@@ -29,8 +29,9 @@ definekey top s-N nextscreen
 definekey top s-P prevscreen
 
 bind d exec dmenu_run
-bind e exec emacs
-bind C-e exec emacs
+# use fullscreen option -fs so it works OK in ratpoison WM.
+bind e exec emacs -fs
+bind C-e exec emacs -fs
 #bind e exec emacsclient -c -a ""
 #bind C-e exec emacsclient -c -a ""
 
