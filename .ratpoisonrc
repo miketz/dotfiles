@@ -31,7 +31,7 @@ definekey top s-P prevscreen
 bind d exec dmenu_run
 # use fullscreen option -fs so it works OK in ratpoison WM.
 bind e exec emacs -fs
-bind C-e exec emacs -fs
+bind C-e exec emacs -Q -l ~/.emacs.d/initFast.el -fs
 #bind e exec emacsclient -c -a ""
 #bind C-e exec emacsclient -c -a ""
 
