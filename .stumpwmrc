@@ -31,7 +31,8 @@
 
 
 ;; *root-map* is the C-t prefix.
-(define-key *root-map* (stumpwm:kbd "E") "exec emacsclient -c -a \"\"")
+(define-key *root-map* (stumpwm:kbd "e") "exec emacs -fs \"\"")
+;; (define-key *root-map* (stumpwm:kbd "E") "exec emacsclient -c -a \"\"")
 
 
 ;; change focus to a frame when it is clicked.
@@ -43,3 +44,16 @@
 ;; %n is newline.
 (setf stumpwm:*time-format-string-default* "%Y-%m-%d%n%a %b %e%n%l:%M %p")
                                         ;"%Y-%m-%d%n%a %b %e%n%r"
+
+;;------------------------------------------------
+;; background image
+;;------------------------------------------------
+(when nil ;; todo handle for specific computers
+  (defvar *background-image-path* "/home/mike/Pictures") ;not used yet.
+
+  ;; set the initial background image.
+  (run-shell-command "display -window root /home/mike/Pictures/sunset1.jpg")
+
+  ;; key-binds to change bg.
+  (define-key *top-map* (stumpwm:kbd "s-i") "exec feh --bg-scale /home/mike/Pictures/sunset1.jpg")
+  (define-key *top-map* (stumpwm:kbd "s-u") "exec feh --bg-scale /home/mike/Pictures/water.jpeg"))
