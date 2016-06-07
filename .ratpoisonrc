@@ -66,13 +66,15 @@ set fgcolor green
 #bind F2 exec rpws 2
 #bind F3 exec rpws 3
 #
-unbind k
+
+
+
+#unbind k
+#bind k focusup
 
 bind j focusdown
 
 bind h focusleft
-
-bind k focusup
 
 bind l focusright
 
