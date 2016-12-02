@@ -7,3 +7,5 @@ vnoremap jf <Esc>
 set ignorecase smartcase
 set hlsearch
 set incsearch
+set nobackup
+set noswapfile
