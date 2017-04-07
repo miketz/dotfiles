@@ -402,7 +402,7 @@
     <action name="Unmaximize"/>
   </keybind>
   <keybind key="W-S-Down">
-    <action name="Iconify"/>
+    <action name="Iconify"/>    <!-- iconify means minimize-->
   </keybind>
   <keybind key="W-Up">
     <action name="Maximize"/>
