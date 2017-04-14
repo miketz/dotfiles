@@ -325,7 +325,7 @@
     <action name="ToggleDecorations"/>
   </keybind>
 
-  <keybind key="W-p">
+  <keybind key="W-o">
     <action name="Execute">
       <command>dmenu_run</command>
     </action>
@@ -345,8 +345,14 @@
   <keybind key="W-S-c">
     <action name="Close"/>
   </keybind>
-  <!-- next window like in dwm -->
-  <keybind key="W-j">
+  <!-- logout like in dwm -->
+  <keybind key="W-S-q">
+    <action name="Execute">
+      <command>openbox --exit</command>
+    </action>
+  </keybind>
+  <!-- next windows. (alt-tab is default) -->
+  <keybind key="W-n">
     <action name="NextWindow">
       <finalactions>
         <action name="Focus"/>
@@ -355,7 +361,7 @@
       </finalactions>
     </action>
   </keybind>
-  <keybind key="W-k">
+  <keybind key="W-p">
     <action name="PreviousWindow">
       <finalactions>
         <action name="Focus"/>
@@ -405,6 +411,15 @@
     <action name="Iconify"/>    <!-- iconify means minimize-->
   </keybind>
   <keybind key="W-Up">
+    <action name="Maximize"/>
+  </keybind>
+  <keybind key="W-j">
+    <action name="Unmaximize"/>
+  </keybind>
+  <keybind key="W-S-j">
+    <action name="Iconify"/>    <!-- iconify means minimize-->
+  </keybind>
+  <keybind key="W-k">
     <action name="Maximize"/>
   </keybind>
 
@@ -841,7 +856,7 @@
 
   # end of the example
 -->
-<!-- ************ mine ******************* -->
+<!-- ************ mine 2 ******************* -->
 <application class="*"> <!-- all windwos -->
   <!-- remove title bar -->
   <decor>no</decor>
