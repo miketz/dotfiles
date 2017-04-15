@@ -351,6 +351,12 @@
       <command>openbox --exit</command>
     </action>
   </keybind>
+  <!-- power off. awkward key combo to make it hard to hit by accident. -->
+  <keybind key="W-S-t">
+    <action name="Execute">
+      <command>systemctl poweroff</command>
+    </action>
+  </keybind>
   <!-- next windows. (alt-tab is default) -->
   <keybind key="W-n">
     <action name="NextWindow">
