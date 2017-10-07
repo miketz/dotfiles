@@ -5,3 +5,6 @@
 
 # on wild-dog
 cp ./rc.xml /etc/X11/openbox/rc.xml
+
+
+cp ./.vimrc ~/.vimrc
