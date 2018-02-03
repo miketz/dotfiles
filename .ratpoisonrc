@@ -21,6 +21,7 @@ definekey top s-K exchangeup
 definekey top s-L exchangeright
 definekey top s-n next
 definekey top s-p prev
+definekey top s-o exec dmenu_run
 #definekey top s-d exec dmenu_run
 definekey top s-d exec
 definekey top s-colon colon
