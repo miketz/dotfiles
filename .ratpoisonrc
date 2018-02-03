@@ -29,6 +29,11 @@ definekey top s-b banish
 definekey top s-N nextscreen
 definekey top s-P prevscreen
 
+# mimic some dwm bindings
+definekey top s-C kill
+definekey top s-Q quit
+
+
 bind d exec dmenu_run
 # use fullscreen option -fs so it works OK in ratpoison WM.
 bind e exec emacs -fs
