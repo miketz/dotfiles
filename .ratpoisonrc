@@ -94,6 +94,9 @@ bind L exchangeright
 
 bind C-k delete
 
+# use am/pm time format
+bind a exec ratpoison -c "echo $(date +"%a %b %d  %I:%M%p  %Y")"
+bind C-a exec ratpoison -c "echo $(date +"%a %b %d  %I:%M%p  %Y")"
 
 ###Alt-tab
 #definekey top M-Tab next
