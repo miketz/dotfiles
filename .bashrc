@@ -118,3 +118,6 @@ alias e='emacs -Q -nw'
 alias ee='emacs -Q -fs'
 # gui emacs, fast, full screen (needed for ratpoison WM)
 alias ef='emacs -Q -l ~/.emacs.d/initFast.el -fs'
+
+export EDITOR='vim'
+export VISUAL='vim'
