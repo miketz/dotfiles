@@ -27,6 +27,8 @@ set smarttab
 set expandtab
 set autochdir
 
+set noruler
+
 "disable bell
 set noerrorbells
 set vb t_vb=
