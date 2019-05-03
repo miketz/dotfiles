@@ -10,7 +10,7 @@ vnoremap fj <Esc>
 vnoremap jf <Esc>
 
 set ignorecase smartcase
-set hlsearch
+set nohlsearch
 set incsearch
 
 set nowritebackup
@@ -26,6 +26,7 @@ set showmatch
 set smarttab
 set expandtab
 set autochdir
+set noruler
 
 "disable bell
 set noerrorbells
