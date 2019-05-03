@@ -28,8 +28,6 @@ set expandtab
 set autochdir
 set noruler
 
-set noruler
-
 "disable bell
 set noerrorbells
 set vb t_vb=
