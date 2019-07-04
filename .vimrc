@@ -16,6 +16,7 @@ set incsearch
 set nowritebackup
 set nobackup
 set noswapfile
+set noundofile
 
 set tabstop=4
 set softtabstop=4
