@@ -101,7 +101,8 @@ bind a exec ratpoison -c "echo $(date +"%a %b %d  %I:%M%p  %Y")"
 bind C-a exec ratpoison -c "echo $(date +"%a %b %d  %I:%M%p  %Y")"
 
 # call wmname to fix issue with some full screen apps
-exec wmname LG3D
+exec wmname ratpoison
+# exec wmname LG3D
 
 ###Alt-tab
 #definekey top M-Tab next
