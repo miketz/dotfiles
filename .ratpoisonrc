@@ -29,6 +29,9 @@ definekey top s-colon colon
 definekey top s-b banish
 definekey top s-N nextscreen
 definekey top s-P prevscreen
+# alt-tab like in most other window managers.
+definekey top M-Tab next
+definekey top M-ISO_Left_Tab prev
 
 # mimic some dwm bindings
 # definekey top s-C kill # this kills the whole app, not jsut a popup window!
@@ -134,3 +137,8 @@ exec wmname ratpoison
 ## Sound Volume/To increase or decrease the sound volume
 #bind Next exec amixer -q set PCM 5- unmute
 #bind Prior exec amixer -q set PCM 5+ unmute
+
+
+#########
+# background color. Not part of ratpoison itself, just executing a command line statement.
+exec xsetroot -solid "#35352B"
