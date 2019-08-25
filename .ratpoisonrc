@@ -142,3 +142,9 @@ exec wmname ratpoison
 #########
 # background color. Not part of ratpoison itself, just executing a command line statement.
 exec xsetroot -solid "#35352B"
+
+#########
+# focus follows mouse. Requires you build sloppy.c first. like this:
+#     cd ~/proj/ratpoison/contrib
+#     gcc -o sloppy sloppy.c -lX11
+exec ~/proj/ratpoison/contrib/sloppy
