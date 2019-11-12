@@ -121,3 +121,5 @@ alias ef='emacs -Q -l ~/.emacs.d/initFast.el -fs'
 
 export EDITOR='vim'
 export VISUAL='vim'
+
+bind 'set bell-style none'
