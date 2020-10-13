@@ -29,6 +29,15 @@
 (define-key *top-map* (stumpwm:kbd "s-p") "pull-hidden-previous")
 (define-key *top-map* (stumpwm:kbd "s-d") "exec")
 (define-key *top-map* (stumpwm:kbd "s-b") "banish")
+(define-key *top-map* (stumpwm:kbd "s-o") "exec dmenu_run")
+;; alt-tab like in most other window managers.
+(define-key *top-map* (stumpwm:kbd "M-Tab") "next")
+(define-key *top-map* (stumpwm:kbd "M-ISO_Left_Tab") "prev")
+
+;; mimic some dwm bindings
+;; definekey top s-C kill # this kills the whole app, not jsut a popup window!
+(define-key *top-map* (stumpwm:kbd "s-C") "delete")
+(define-key *top-map* (stumpwm:kbd "s-Q") "quit")
 
 
 ;; *root-map* is the C-t prefix.
