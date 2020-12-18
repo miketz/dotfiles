@@ -27,6 +27,7 @@ definekey top s-o exec dmenu_run
 definekey top s-d exec
 definekey top s-colon colon
 definekey top s-b banish
+# switch monitors
 definekey top s-N nextscreen
 definekey top s-P prevscreen
 # alt-tab like in most other window managers.
@@ -103,9 +104,12 @@ bind C-k delete
 bind a exec ratpoison -c "echo $(date +"%a %b %d  %I:%M%p  %Y")"
 bind C-a exec ratpoison -c "echo $(date +"%a %b %d  %I:%M%p  %Y")"
 
-# call wmname to fix issue with some full screen apps
-exec wmname ratpoison
-# exec wmname LG3D
+# first install wmane with "apt-get install suckless-tools"
+# call "wmname ratpoison" to fix issue with some full screen apps
+# exec wmname ratpoison
+
+# "wmname LG3D" fixes netbeans as java uses a hard coded list of WM names?
+exec wmname LG3D
 
 ###Alt-tab
 #definekey top M-Tab next
