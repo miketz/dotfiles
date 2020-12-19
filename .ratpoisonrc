@@ -104,12 +104,12 @@ bind C-k delete
 bind a exec ratpoison -c "echo $(date +"%a %b %d  %I:%M%p  %Y")"
 bind C-a exec ratpoison -c "echo $(date +"%a %b %d  %I:%M%p  %Y")"
 
-# first install wmane with "apt-get install suckless-tools"
+# first install wname with "apt-get install suckless-tools"
 # call "wmname ratpoison" to fix issue with some full screen apps
-# exec wmname ratpoison
-
 # "wmname LG3D" fixes netbeans as java uses a hard coded list of WM names?
 exec wmname LG3D
+# exec wmname ratpoison
+# exec wmname compiz
 
 ###Alt-tab
 #definekey top M-Tab next
