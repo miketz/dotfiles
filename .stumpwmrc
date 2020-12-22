@@ -55,6 +55,28 @@
 (setf stumpwm:*time-format-string-default* "%Y-%m-%d%n%a %b %e%n%l:%M %p")
                                         ;"%Y-%m-%d%n%a %b %e%n%r"
 
+
+;;-----------------------------------------------------------------------------
+;; groups
+;;-----------------------------------------------------------------------------
+;; create some groups on startup. gnewbg creates without switching.
+;; (gnewbg "1") ; 1 already exists.
+(gnewbg "2")
+(gnewbg "3")
+(gnewbg "4")
+;; keybinds to switch groups
+;; (define-key *top-map* (stumpwm:kbd "s-0") "gselect 0")
+(define-key *top-map* (stumpwm:kbd "s-1") "gselect 1")
+(define-key *top-map* (stumpwm:kbd "s-2") "gselect 2")
+(define-key *top-map* (stumpwm:kbd "s-3") "gselect 3")
+(define-key *top-map* (stumpwm:kbd "s-4") "gselect 4")
+;; keybinds to move current window to a group.
+;; TODO: figure out how to use Shift instead of Control.
+(define-key *top-map* (stumpwm:kbd "s-C-1") "gmove 1")
+(define-key *top-map* (stumpwm:kbd "s-C-2") "gmove 2")
+(define-key *top-map* (stumpwm:kbd "s-C-3") "gmove 3")
+(define-key *top-map* (stumpwm:kbd "s-C-4") "gmove 4")
+
 ;;------------------------------------------------
 ;; background image
 ;;------------------------------------------------
