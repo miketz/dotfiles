@@ -64,6 +64,14 @@ definekey top s-4 gselect 4
 # immediately go to the next window when switching a group. By default it just
 # displays a window from the old group.
 addhook switchgroup next
+# keybinds to move current window to a group.
+# TODO: figure out how to use Shift instead of Control.
+definekey top s-C-0 gmove 0
+definekey top s-C-1 gmove 1
+definekey top s-C-2 gmove 2
+definekey top s-C-3 gmove 3
+definekey top s-C-4 gmove 4
+
 
 
 bind d exec dmenu_run
