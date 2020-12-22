@@ -25,6 +25,10 @@ definekey top s-K exchangeup
 definekey top s-L exchangeright
 definekey top s-n next
 definekey top s-p prev
+# alt-tab like in most other window managers.
+definekey top M-Tab next
+definekey top M-ISO_Left_Tab prev
+
 definekey top s-o exec dmenu_run
 #definekey top s-d exec dmenu_run
 definekey top s-d exec
@@ -35,9 +39,6 @@ definekey top s-b banish
 #------------------------------------------------------------------------------
 definekey top s-N nextscreen
 definekey top s-P prevscreen
-# alt-tab like in most other window managers.
-definekey top M-Tab next
-definekey top M-ISO_Left_Tab prev
 
 #------------------------------------------------------------------------------
 # mimic some dwm bindings
