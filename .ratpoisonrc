@@ -50,11 +50,11 @@ definekey top s-Q quit
 #------------------------------------------------------------------------------
 # groups
 #------------------------------------------------------------------------------
-# create some groups on startup
-gnew 1
-gnew 2
-gnew 3
-gnew 4
+# create some groups on startup. gnewbg creates without switching.
+gnewbg 1
+gnewbg 2
+gnewbg 3
+gnewbg 4
 # keybinds to switch groups
 definekey top s-0 gselect 0
 definekey top s-1 gselect 1
