@@ -12,6 +12,9 @@
 #A : Alt modifier
 #H : Hyper modifier
 #s : Super modifier
+#------------------------------------------------------------------------------
+# general bindigns
+#------------------------------------------------------------------------------
 definekey top s-h focusleft
 definekey top s-j focusdown
 definekey top s-k focusup
@@ -27,17 +30,39 @@ definekey top s-o exec dmenu_run
 definekey top s-d exec
 definekey top s-colon colon
 definekey top s-b banish
+#------------------------------------------------------------------------------
 # switch monitors
+#------------------------------------------------------------------------------
 definekey top s-N nextscreen
 definekey top s-P prevscreen
 # alt-tab like in most other window managers.
 definekey top M-Tab next
 definekey top M-ISO_Left_Tab prev
 
+#------------------------------------------------------------------------------
 # mimic some dwm bindings
 # definekey top s-C kill # this kills the whole app, not jsut a popup window!
+#------------------------------------------------------------------------------
 definekey top s-C delete
 definekey top s-Q quit
+
+#------------------------------------------------------------------------------
+# groups
+#------------------------------------------------------------------------------
+# create some groups on startup
+gnew 1
+gnew 2
+gnew 3
+gnew 4
+# keybinds to switch groups
+definekey top s-0 gselect 0
+definekey top s-1 gselect 1
+definekey top s-2 gselect 2
+definekey top s-3 gselect 3
+definekey top s-4 gselect 4
+# immediately go to the next window when switching a group. By default it just
+# displays a window from the old group.
+addhook switchgroup next
 
 
 bind d exec dmenu_run
