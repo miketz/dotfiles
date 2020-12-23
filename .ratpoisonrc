@@ -160,7 +160,7 @@ exec wmname LG3D
 #bind p exec urxvt -e elinks
 #
 #
-#rudeness 12
+rudeness 12
 #
 ## Para hacer un screenshot/To make a screenshot:
 #definekey top Print exec urxvt -e scrot -cd 10
