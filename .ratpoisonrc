@@ -29,7 +29,17 @@ definekey top s-p prev
 definekey top M-Tab next
 definekey top M-ISO_Left_Tab prev
 
-definekey top s-o exec dmenu_run
+# bindings with the normal C-t prefix
+bind h focusleft
+bind j focusdown
+bind k focusup # by default k is delete, but overriding here
+bind l focusright
+bind H exchangeleft
+bind J exchangedown
+bind K exchangeup
+bind L exchangeright
+bind C-k delete # reclaim override of k above with C-k
+
 #definekey top s-d exec dmenu_run
 definekey top s-d exec
 definekey top s-colon colon
@@ -73,9 +83,13 @@ definekey top s-C-3 gmove 3
 definekey top s-C-4 gmove 4
 
 
+#------------------------------------------------------------------------------
+# run programs
+#------------------------------------------------------------------------------
+definekey top s-o exec dmenu_run
+# bind d exec dmenu_run
 
-bind d exec dmenu_run
-# use fullscreen option -fs so it works OK in ratpoison WM.
+# Emacs. use fullscreen option -fs so it works OK in ratpoison WM.
 bind e exec emacs -fs
 bind C-e exec emacs -Q -l ~/.emacs.d/initFast.el -fs
 #bind e exec emacsclient -c -a ""
@@ -118,21 +132,6 @@ set fgcolor green
 #unbind k
 #bind k focusup
 
-bind j focusdown
-
-bind h focusleft
-
-bind l focusright
-
-bind J exchangedown
-
-bind H exchangeleft
-
-bind K exchangeup
-
-bind L exchangeright
-
-bind C-k delete
 
 # use am/pm time format
 bind a exec ratpoison -c "echo $(date +"%a %b %d  %I:%M%p  %Y")"
@@ -145,10 +144,7 @@ exec wmname LG3D
 # exec wmname ratpoison
 # exec wmname compiz
 
-###Alt-tab
-#definekey top M-Tab next
-#definekey top M-ISO_Left_Tab prev
-#
+
 #### Atajos de teclas/Keybindings
 #bind e exec pcmanfm
 #bind i exec iceweasel
@@ -165,9 +161,6 @@ exec wmname LG3D
 #
 #
 #rudeness 12
-#
-## Para lanzar un Run box/To launch a Run box:
-#definekey top C-space exec
 #
 ## Para hacer un screenshot/To make a screenshot:
 #definekey top Print exec urxvt -e scrot -cd 10
