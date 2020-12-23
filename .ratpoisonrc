@@ -13,7 +13,7 @@
 #H : Hyper modifier
 #s : Super modifier
 #------------------------------------------------------------------------------
-# general bindigns
+# general bindings
 #------------------------------------------------------------------------------
 definekey top s-h focusleft
 definekey top s-j focusdown
@@ -42,7 +42,7 @@ definekey top s-P prevscreen
 
 #------------------------------------------------------------------------------
 # mimic some dwm bindings
-# definekey top s-C kill # this kills the whole app, not jsut a popup window!
+# definekey top s-C kill # this kills the whole app, not just a popup window!
 #------------------------------------------------------------------------------
 definekey top s-C delete
 definekey top s-Q quit
