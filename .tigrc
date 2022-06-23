@@ -1,5 +1,8 @@
+-*- mode: sh -*-
+
 # keybinds
 bind main ! !?git revert %(commit)
+# bind generic C >git commit
 
 # mouse support
 set mouse = yes
