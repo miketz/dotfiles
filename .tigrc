@@ -3,6 +3,8 @@
 # keybinds
 bind main ! !?git revert %(commit)
 # bind generic C >git commit
+bind status C !git commit -v
+bind status c !git commit
 
 # mouse support
 set mouse = yes
