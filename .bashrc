@@ -123,3 +123,9 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 bind 'set bell-style none'
+
+# aliases
+alias s="tig status -4000"
+alias t="tig -4000"
+alias g="git"
+alias gl="git log --oneline --graph --decorate -n 25"
