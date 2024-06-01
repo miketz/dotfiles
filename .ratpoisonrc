@@ -87,6 +87,7 @@ definekey top s-C-4 gmove 4
 # run programs
 #------------------------------------------------------------------------------
 definekey top s-o exec dmenu_run
+definekey top s-space exec dmenu_run
 # bind d exec dmenu_run
 
 # Emacs. use fullscreen option -fs so it works OK in ratpoison WM.
